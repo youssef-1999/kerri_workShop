@@ -1,0 +1,315 @@
+*
+{
+     padding: 0%;
+     margin: 0%;
+     box-sizing: border-box;
+}
+:root
+{
+     --main-color:#f44336;
+      --border-color:1px solid rgb(142, 139, 139,0.2);
+     --p_length:30rem;
+     
+}
+.navbar-dark .navbar-nav .nav-link{
+     color: #eee;
+}
+.navbar-dark .navbar-nav .nav-link:hover{
+
+     color: var(--main-color);
+
+}
+.navbar-dark .navbar-nav .nav-item .active 
+{
+     color: var(--main-color);
+}
+.layer_caption h1::after
+{
+     content: "";
+     position: absolute;
+     padding-left: 12px;
+     animation: moving 5s  infinite ;
+}
+@keyframes moving {
+     10%{
+          content:"A FASHION DESIGNER"
+     }
+     40%{
+          content:"KERRI DUO"
+     }
+     60%{
+          content:"PHOTOGRAPHER"
+     }
+     80%{
+          content:"FREELANCER"
+     }
+}
+
+#header
+{
+     background-image: url("../images/header-bg.jpg");
+     background-position: center;
+     background-size: cover;
+     height: 100vh;
+}
+#header .layer
+{
+     background-color: rgba(0, 0, 0, 0.7);
+     height: 100%;
+}
+
+#header .layer_caption h1::after
+{
+     position: absolute;
+     content: "";
+     animation: typing 8s ease-in-out infinite;
+     font-family: "Montserrat", sans-serif;
+     width: var(--p_length);
+}
+@keyframes typing {
+     20%
+     {
+          content: "A GRAPHIC DESIGNER";
+          opacity: 0.8;
+     }
+     50%
+     {
+          content: "A PHOTOGRAPHER";
+          opacity: 0.9;
+
+     }
+     70%
+     {
+          content: "KERRI DEO";
+          opacity: 1;
+
+     }
+}
+
+.layer_caption  :nth-child(3)
+{
+     max-width: 500px;
+    line-height: 1.8;
+    color: rgba(255, 255, 255, 0.75) !important;
+}
+.layer_caption button
+{
+     border: 1px solid white;
+     color: white;
+}
+.layer_caption button:hover
+{
+     background-color: white;
+     color: black;
+}
+.below_button 
+{
+     bottom: 10%;
+     background-color: transparent;
+     width: 1.5rem;
+     height: 3rem;
+     border-radius: 15px;   
+     border: 1px solid white;
+     animation: move 2s infinite; 
+}
+.below_button .small_btn
+{
+     width: 0.5rem;
+     height: 0.9rem;
+     background-color: white;
+     bottom: 7%;
+     border-radius: 5px;
+     left: 30%;
+}
+
+@keyframes move {
+    15%{
+     bottom: 10%;
+    }
+    20%
+    {
+     bottom: 14%;
+    }
+    
+}
+#about h4
+{
+     color: var(--main-color);
+}
+.custom_name
+{
+     color: var(--main-color);
+}
+#about img 
+{
+     border-radius: 5px;
+     padding: 5px;
+     border: var(--border-color);
+}
+.icons
+{
+     width: 3rem;
+     height: 3rem;
+     border-radius: 50%;
+     border: var(--border-color);
+     margin-right: 5px;
+     transition: all 1s ;
+}
+.social_icons .icons:hover
+{
+     border: 1px solid var(--main-color);
+     color: var(--main-color);
+}
+#about p
+{
+     width:85% ;
+}
+#services
+{
+     background-color: #eee;
+}
+#services p
+{
+width: var(--p_length);
+
+}
+#services .test p
+{
+     width: 19rem;
+}
+#services .test h5::after
+{
+     content: "";
+     position: absolute;
+     bottom: -45%;
+     background-color: var(--main-color);
+     width: 3rem;
+     height: 0.2rem;
+     left: 50%;
+     transform: translateX(-50%);
+     transition: all 2s ease-in-out;
+}
+#services .test:hover h5::after
+{
+     width: 6rem;
+}
+#services .test i 
+{
+     color: var(--main-color);
+}
+#services .test 
+{
+     border: var(--border-color);
+     border-radius: 5px;
+}
+#client p 
+{
+     width: var(--p_length);
+}
+.item i 
+{
+     border: var(--main-color);
+    
+}
+ .custom_text_carousel p
+{
+     font-size: 1.5rem;
+}
+.carousel .carousel-indicators button
+{
+     background-color: var(--main-color);
+}
+#client
+{
+     background-color: #eee;
+}
+.client_header p
+{
+     width: var(--p_length);
+}
+.nav-tabs
+{
+     border: none;
+}
+.nav-tabs .nav-item button
+{
+     border: none;
+     border-radius: 15px;
+}
+.nav-tabs .nav-item button:hover
+{
+     background-color: var(--main-color);
+     border-radius: 15px;
+}
+.nav-tabs .nav-item .active
+{
+     background-color: var(--main-color);
+     border-radius: 15px;
+}
+.item1
+{
+     position: relative;
+     overflow: hidden;
+}
+ .item1 .layer_work
+{
+     height: 100%;
+     background-color: rgba(0, 0, 0, 0.7);
+     display: flex;
+     position: absolute;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     top: 104%;
+     right: 0;
+     left: 0;
+     bottom: 0;
+     opacity: 0;
+     transition: all 1s ;
+}
+.item1:hover .layer_work
+{
+     opacity: 1;
+     top: 0;
+}
+
+.blog_header p
+{
+     width: var(--p_length);
+}
+.custom_span
+{
+     color: var(--main-color);
+}
+#blog .card .img
+{
+     border-radius: 5px;
+}
+
+.contact_header p
+{
+     width: var(--p_length);
+}
+.inner_contact_icon i
+{
+     color: var(--main-color);
+}
+#contact textarea
+{
+     resize: none;
+}
+
+.footer_iconing
+{
+     width: 3rem;
+     height: 3rem;
+     border-radius: 50%;
+     margin-right: 5px;
+     transition: all 1s ;
+     background-color: black;
+     cursor: pointer;
+}
+.footer_iconing:hover 
+{
+     background-color: var(--main-color);
+}

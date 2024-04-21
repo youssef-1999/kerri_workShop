@@ -1,0 +1,69 @@
+@media (min-width: 100px) and (max-width:357px) {
+     #header
+     {
+          background-color: red;
+          /* height: 100%; */
+     }
+     #header .layer
+     {
+          /* background-color: teal; */
+          width: 100%;
+     }
+.below_button 
+{
+     bottom:-5%;
+}
+@keyframes move {
+     15%{
+      bottom: -5%;
+     }
+     20%
+     {
+      bottom: -9%;
+     }
+     40%
+     {
+      bottom: -5%;
+     }
+ }
+ #services .row .col-lg-4 p
+ {
+     color: teal;
+     font-size: 0.5rem;
+     text-align: start;
+ }
+#header .layer_caption h1::after
+{
+     font-size: 1rem;
+     background-color: red;
+}
+ 
+}
+
+@media (min-width:500px)and (max-width:1000px) {
+   .below_button
+   {
+    bottom:5%;
+   }
+   @keyframes move {
+    15%{
+     bottom: 5%;
+    }
+    20%
+    {
+     bottom: 10%;
+    }
+    
+    
+}
+}
+
+@media (min-width:850px) and (max-width:1200px) {
+
+#services .test p
+{
+     width: 10rem;
+     text-align: center;
+}
+}
+
